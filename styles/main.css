@@ -112,28 +112,43 @@ footer{
     width: 100%;
 }
 
-
 @media (max-width: 768px) {
     nav ul {
-        display: none; 
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: #b3d4f0;
+        
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2.5rem;
+        z-index: 100;
+
+        transform: translateX(100%);
+        transition: transform 0.4s ease-in-out;
+    }
+
+    /* Class added dynamically by JS */
+    nav ul.open {
+        transform: translateX(0);
     }
 
     .hamburger-btn {
         display: block;
+        cursor: pointer;
     }
 
-    input[type="text"] {
-        max-width: 100%;
-        
-    }
-    #name-button {
-        max-width: 100%;
-    }
-
-    footer {
-    margin-top: 3rem; 
-    text-align: center; 
-    position: static; 
+    .close-btn {
+        position: absolute;
+        top: 1.5rem;
+        left: 1.5rem;
+        display: block;
+        cursor: pointer;
+        z-index: 101;
     }
 }
 
