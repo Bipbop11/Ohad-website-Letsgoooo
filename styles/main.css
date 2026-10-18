@@ -1,1 +1,139 @@
-/* Your styles go here */
+:root{
+    --design-color: #4a76b4;
+    --footer-color: #aea9a9;
+    --main-font: Rubik;
+}
+
+.hamburger-btn, .close-btn {
+    display: none; 
+    background: none; 
+    border: none;
+    cursor: pointer;
+}
+
+header{
+    background-color: var(--design-color);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 1.75rem;
+    text-align: center;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+header > h1 {
+    font-size: 2rem;
+    margin: 0;
+}
+
+main{
+    max-width: 40rem;
+    margin: auto;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+
+main > h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    margin:auto;
+    font-weight: 400;
+}
+
+p {
+    margin-bottom: 1rem;
+}
+
+.intro-text {
+    margin-bottom: 2rem;
+}
+
+
+nav ul {
+    display: flex; 
+    list-style: none;
+    padding: 0; 
+    margin: 0; 
+    gap: 1rem; 
+}
+
+nav a {
+    color: white; 
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+
+body{
+    font-family: var(--main-font);
+    color: black;
+    margin: 0;
+    padding: 0;
+}
+
+label {
+    display: block;
+    margin-bottom: 1rem;
+}
+
+input[type="text"] {
+    font-family: inherit;
+    font-size: 1rem;
+    padding: 0.4rem 1rem;
+    border: 2.5px solid #ccc;
+    border-radius:0.5rem;
+    width: 100%;
+    max-width: 15rem;
+    margin-bottom: 1rem; 
+}
+
+#name-button {
+    font-family: inherit;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 0.5rem;
+    background-color: var(--design-color);
+    width: 100%;
+    max-width: 15rem;
+    color: white;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+footer{
+    color: var(--footer-color);
+    text-align: center;
+    padding: 0.2rem;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+
+@media (max-width: 768px) {
+    nav ul {
+        display: none; 
+    }
+
+    .hamburger-btn {
+        display: block;
+    }
+
+    input[type="text"] {
+        max-width: 100%;
+        
+    }
+    #name-button {
+        max-width: 100%;
+    }
+
+    footer {
+    margin-top: 3rem; 
+    text-align: center; 
+    position: static; 
+    }
+}
+
