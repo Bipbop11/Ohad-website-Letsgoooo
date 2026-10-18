@@ -150,5 +150,17 @@ footer{
         cursor: pointer;
         z-index: 101;
     }
+
+    footer {
+        position: static;
+        margin-top: 2rem;
+    }
+
+    nav a {
+        color: #333; /* צבע שחור/אפור כהה מאוד */
+        font-weight: 700; /* הופך את הטקסט למודגש (Bold) */
+        font-size: 2rem; /* מגדיל את הטקסט כדי שיבלוט במסך המלא */
+    }
+
 }
 
