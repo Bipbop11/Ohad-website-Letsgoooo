@@ -21,6 +21,10 @@ Enable and disable `box-sizing: border-box;` and inspect the size of the element
 What is the total width, and why? Explain in detail.
 
 **Answer:**
+The total size without `box-sizing: border-box;` is 114px and with " " " " is 100px
+thats because without `box-sizing: border-box;` the padding (5px each side) and the border(2px each side)
+are added to the width to give a total of 100 + 2*5 + 2*2 = 114.
+however, if we use `box-sizing: border-box;` then the padding and border are also included in the 100px width
 
 ## 3. The viewport
 
