@@ -369,6 +369,16 @@ a {
     text-align: center;
 }
 
+.form-message.is-error {
+    background-color: #fdecec;
+    color: #b42318;
+}
+
+.contact-form .btn:disabled {
+    opacity: 0.7;
+    cursor: wait;
+}
+
 /* ===== Courses ===== */
 
 .courses-grid {

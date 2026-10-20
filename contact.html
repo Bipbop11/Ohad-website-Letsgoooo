@@ -41,7 +41,14 @@
       <!-- ⚠️ שים לב: הטופס כרגע לא שולח את הפרטים לשום מקום — הוא רק מציג הודעת תודה. -->
       <!--    כדי לקבל את הפניות בפועל, חבר אותו לשירות כמו Formspree / Google Forms. -->
       <!-- ===================================================== -->
-      <form id="contactForm" class="contact-form">
+      <form id="contactForm" class="contact-form" action="https://api.web3forms.com/submit" method="POST">
+        <!-- Web3Forms: submissions are emailed to the address this key was created with -->
+        <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE" />
+        <input type="hidden" name="subject" value="פנייה חדשה מהאתר" />
+        <input type="hidden" name="from_name" value="טופס יצירת קשר - האתר" />
+        <!-- Spam trap: real users never see or fill this -->
+        <input type="checkbox" name="botcheck" class="hidden" style="display: none;" />
+
         <div class="form-row">
           <div class="form-field">
             <label for="firstName">שם פרטי</label>
