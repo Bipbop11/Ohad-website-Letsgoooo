@@ -152,10 +152,6 @@ a {
     text-align: center;
     color: white;
     background-color: var(--color-primary);
-    /* ============================================================
-       🖼️ תמונת הרקע: שמור את התמונה בתיקייה public/images בשם hero-bg.jpg
-          (או שנה כאן את הנתיב). השכבה הכהה מעליה שומרת על קריאות הטקסט.
-       ============================================================ */
     background-image:
         linear-gradient(rgba(29, 53, 87, 0.78), rgba(29, 53, 87, 0.88)),
         url("/images/hero-bg.jpg");

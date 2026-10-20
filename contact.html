@@ -36,11 +36,6 @@
         <h1>צור קשר</h1>
         <p>רוצים לתאם שיעור? השאירו פרטים ואחזור אליכם בהקדם.</p>
       </div>
-
-      <!-- ===================================================== -->
-      <!-- ⚠️ שים לב: הטופס כרגע לא שולח את הפרטים לשום מקום — הוא רק מציג הודעת תודה. -->
-      <!--    כדי לקבל את הפניות בפועל, חבר אותו לשירות כמו Formspree / Google Forms. -->
-      <!-- ===================================================== -->
       <form id="contactForm" class="contact-form" action="https://api.web3forms.com/submit" method="POST">
         <!-- Web3Forms: submissions are emailed to the address this key was created with -->
         <input type="hidden" name="access_key" value="11676a66-3a52-4a60-a71f-7f7d7e83295b" />
@@ -75,7 +70,6 @@
           <label for="course">באיזה קורס אתה מעוניין?</label>
           <select id="course" name="course" required>
             <option value="" disabled selected>בחרו קורס</option>
-            <!-- ✍️ הכנס כאן את שמות הקורסים שלך (כדאי שיתאימו לרשימה ב-courses.html) -->
             <option>לינארית 1</option>
             <option>מתמטיקה דיסקרטית</option>
             <option>אלגוריתמים</option>
